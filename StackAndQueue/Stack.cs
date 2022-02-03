@@ -42,24 +42,5 @@ namespace StackAndQueue
             }
             Console.WriteLine();
         }
-        internal void Pop()
-        {
-            if (top == null)
-            {
-                Console.WriteLine("stack is in underflow condition, Deletion is not possible");
-                return;
-            }
-            Console.WriteLine("{0} is deleted from stack", top.data);
-            top = top.next;
-        }
-        internal void Peek()
-        {
-            if (top == null)
-            {
-                Console.WriteLine("stack is in undeflow condition");
-                return;
-            }
-            Console.WriteLine("{0} is on the top of the stack", top.data);
-        }
     }
 }
